@@ -1,0 +1,112 @@
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(to bottom, #1d75ce 65%, #eee 65%);
+  background: -webkit-linear-gradient(top, #1d75ce 65%, #eee 65%);
+  color: #ffffff;
+}
+
+.home-content {
+  align-self: center;
+  justify-self: center;
+}
+
+.home-content.right {
+  padding: 2em 0 4em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+.heading {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+.heading a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff
+}
+
+.heading a span{
+  color: #ffffff
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr;
+  }
+  .home-content {
+    align-self: start;
+  }
+}
+
+.google-button {
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  padding: 0;
+  cursor: pointer
+}
+.google-button:focus, .google-button:hover {
+  -webkit-box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+          outline:none
+}
+.google-button:active {
+  background-color: #e5e5e5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition-duration: 10ms;
+          transition-duration: 10ms;
+  outline:none
+}
+
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto',arial,sans-serif;
+}
+
+.window .content{
+  padding-top: 40px;
+  position: fixed;
+  height: calc(100vh - 40px);
+  overflow: hidden;
+  width: 100%;
+}

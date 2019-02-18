@@ -1,0 +1,40 @@
+.about-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #1d75ce 65%, #eee 65%);
+    background: -webkit-linear-gradient(top, #1d75ce 65%, #eee 65%);
+  }
+  
+  .about-content {
+    align-self: center;
+    justify-self: end;
+    width: 35vw;
+    padding: 0 10px;
+    margin-top: -10px;
+  }
+
+  .about-content h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 1em 0;
+    color: rgba(255,255,255,0.8);
+    text-transform:uppercase
+  }
+
+  .about-content p{
+    max-width: 400px;
+    font-weight: 300
+  }
+
+  .about-content small {
+    color: #555
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+        justify-self: center;
+        width: 80vw;
+        margin-top: -110px;
+    }
+  }
